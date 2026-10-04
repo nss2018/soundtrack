@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 单元测试
+        run: python -m unittest discover -s tests
+
+      - name: CLI 契约
+        run: |
+          python -m soundtrack list
+          python -m soundtrack check examples/ui-fx.json
+          python -m soundtrack info examples/menu-loop.json
+          python -m soundtrack render examples/ui-fx.json -o /tmp/demo-1.wav
+
+      - name: 时间轴适配
+        run: |
+          python -m soundtrack adapt examples/timeline-cues.json -o /tmp/demo-2.wav
+
+      - name: 错误路径
+        run: |
+          set +e
+          python -m soundtrack check examples/timeline-cues.json 2>/dev/null
+          test $? -eq 2 || exit 1
+          exit 0
+
+      - name: 产出
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-wav-py${{ matrix.python-version }}
+          path: /tmp/demo-*.wav
+          if-no-files-found: error

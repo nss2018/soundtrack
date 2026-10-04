@@ -1,0 +1,67 @@
+{
+  "name": "ui-fx",
+  "bpm": 100,
+  "sample_rate": 22050,
+  "duration": 6.5,
+  "master": 0.85,
+  "tracks": [
+    {
+      "id": "select",
+      "instrument": "click",
+      "gain": 0.85,
+      "notes": [
+        {"t": 0.10, "pitch": "A5", "dur": 0.03},
+        {"t": 0.90, "pitch": "C5", "dur": 0.03},
+        {"t": 2.30, "pitch": "E5", "dur": 0.03},
+        {"t": 3.70, "pitch": "G5", "dur": 0.03}
+      ]
+    },
+    {
+      "id": "error",
+      "instrument": "blip",
+      "gain": 0.9,
+      "notes": [
+        {"t": 0.55, "pitch": "A2", "dur": 0.22},
+        {"t": 0.85, "pitch": "G#2", "dur": 0.24}
+      ]
+    },
+    {
+      "id": "reward",
+      "instrument": "bell",
+      "gain": 0.75,
+      "notes": [
+        {"t": 1.30, "pitch": "E5", "dur": 0.35},
+        {"t": 1.55, "pitch": "B5", "dur": 0.45},
+        {"t": 4.60, "pitch": "E5", "dur": 0.30},
+        {"t": 4.85, "pitch": "B5", "dur": 0.50}
+      ]
+    },
+    {
+      "id": "back",
+      "instrument": "blip",
+      "gain": 0.7,
+      "notes": [
+        {"t": 2.05, "pitch": "F3", "dur": 0.16},
+        {"t": 5.40, "pitch": "D3", "dur": 0.18}
+      ]
+    },
+    {
+      "id": "swipe",
+      "instrument": "blip",
+      "gain": 0.55,
+      "notes": [
+        {"t": 3.10, "pitch": "D5", "dur": 0.12},
+        {"t": 3.25, "pitch": "E5", "dur": 0.12}
+      ]
+    },
+    {
+      "id": "chapter",
+      "instrument": "pad",
+      "gain": 0.5,
+      "notes": [
+        {"t": 0.00, "pitch": "A3", "dur": 2.40},
+        {"t": 5.80, "pitch": "C4", "dur": 1.60}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "render-timeline",
+  "bpm": 96,
+  "cues": [
+    {"t": 0.00, "label": "chapter"},
+    {"t": 2.60, "label": "tap"},
+    {"t": 3.40, "label": "correct"},
+    {"t": 5.20, "label": "swipe"},
+    {"t": 6.00, "label": "section"},
+    {"t": 8.80, "label": "wrong"},
+    {"t": 9.60, "label": "whoosh"},
+    {"t": 11.40, "label": "success"},
+    {"t": 12.60, "label": "tap"},
+    {"t": 13.40, "label": "unlock"},
+    {"t": 16.00, "label": "chapter"},
+    {"t": 18.60, "label": "reveal"},
+    {"t": 19.40, "label": "correct"},
+    {"t": 22.00, "label": "ending"}
+  ]
+}

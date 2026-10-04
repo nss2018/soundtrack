@@ -1,0 +1,71 @@
+{
+  "name": "menu-loop",
+  "bpm": 84,
+  "sample_rate": 22050,
+  "duration": 16.0,
+  "master": 0.8,
+  "tracks": [
+    {
+      "id": "pad",
+      "instrument": "pad",
+      "gain": 0.55,
+      "loop": 8.0,
+      "notes": [
+        {"t": 0.0, "pitch": "A3", "dur": 4.0},
+        {"t": 4.0, "pitch": "F3", "dur": 4.0},
+        {"t": 0.0, "pitch": "C4", "dur": 8.0, "gain": 0.6}
+      ]
+    },
+    {
+      "id": "bass",
+      "instrument": "bass",
+      "gain": 0.6,
+      "loop": 8.0,
+      "notes": [
+        {"t": 0.0, "pitch": "A2", "dur": 1.2},
+        {"t": 2.0, "pitch": "A2", "dur": 1.2},
+        {"t": 4.0, "pitch": "F2", "dur": 1.2},
+        {"t": 6.0, "pitch": "G2", "dur": 1.2}
+      ]
+    },
+    {
+      "id": "drums",
+      "instrument": "kick",
+      "gain": 0.75,
+      "loop": 8.0,
+      "notes": [
+        {"t": 0.0, "dur": 0.1},
+        {"t": 2.0, "dur": 0.1},
+        {"t": 3.5, "dur": 0.1},
+        {"t": 4.0, "dur": 0.1},
+        {"t": 6.5, "dur": 0.1}
+      ]
+    },
+    {
+      "id": "hats",
+      "instrument": "hat",
+      "gain": 0.32,
+      "loop": 8.0,
+      "notes": [
+        {"t": 0.5, "dur": 0.05}, {"t": 1.0, "dur": 0.05}, {"t": 1.5, "dur": 0.05},
+        {"t": 2.5, "dur": 0.05}, {"t": 3.0, "dur": 0.05}, {"t": 3.5, "dur": 0.05},
+        {"t": 5.5, "dur": 0.05}, {"t": 6.0, "dur": 0.05}, {"t": 6.5, "dur": 0.05},
+        {"t": 7.5, "dur": 0.05}
+      ]
+    },
+    {
+      "id": "melody",
+      "instrument": "pluck",
+      "gain": 0.45,
+      "loop": 8.0,
+      "notes": [
+        {"t": 0.0, "pitch": "C4", "dur": 0.4},
+        {"t": 1.0, "pitch": "E4", "dur": 0.4},
+        {"t": 2.0, "pitch": "A4", "dur": 0.7},
+        {"t": 4.0, "pitch": "F4", "dur": 0.4},
+        {"t": 5.0, "pitch": "C5", "dur": 0.7},
+        {"t": 6.0, "pitch": "G4", "dur": 0.4}
+      ]
+    }
+  ]
+}

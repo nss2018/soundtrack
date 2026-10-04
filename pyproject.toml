@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soundtrack"
+version = "1.0.0"
+description = "Soundtrack as code — 用 JSON 谱写配乐，零第三方依赖，手机上也能跑"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [{ name = "nss2018" }]
+keywords = [
+    "music", "audio", "synthesizer", "wav", "chiptune",
+    "game-audio", "sound-effects", "soundtrack", "code-as-timeline",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Multimedia :: Sound/Audio :: Sound/Audio Synthesis",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+# 刻意留空：整个包只用标准库，这也是它能在 iOS 上跑的原因
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/nss2018/soundtrack"
+Repository = "https://github.com/nss2018/soundtrack"
+
+[project.scripts]
+soundtrack = "soundtrack.cli:main"
+
+[tool.setuptools]
+packages = ["soundtrack"]
